@@ -5,7 +5,7 @@ stage('QA Testing & Report') {
 
                     withCredentials([
                         usernamePassword(credentialsId: 'windows-cred', usernameVariable: 'seleniumhostUser', passwordVariable: 'seleniumhostPassword'),
-                        usernamePassword(credentialsId: 'git-cred', usernameVariable: 'gitUser', passwordVariable: 'gitPassword')
+                        usernamePassword(credentialsId: 'git-cred', usernameVariable: 'gitUser', passwordVariable: 'gitPassword'),
                         usernamePassword(credentialsId: 'ext-cred', usernameVariable: 'seleniumhost', passwordVariable: 'gitRepoURL')
                     ]) {
 
